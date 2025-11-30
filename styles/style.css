@@ -75,6 +75,7 @@ ol {
 
 .result {
   width: 711px;
+  height: 456px;
 }
 
 .search-form {
@@ -89,7 +90,6 @@ ol {
 }
 
 .title {
-  margin-bottom: 26px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -99,6 +99,7 @@ ol {
 }
 
 .content__list-container {
+  margin-top: 0;
   position: relative;
   height: 298px;
   overflow: auto;
@@ -110,13 +111,14 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .content__details {
+  display: grid;
   width: 100%;
   height: 100%;
-  gap: 26px;
+  gap: 20px;
 }
 
 .result__video {
@@ -129,8 +131,7 @@ ol {
 
 .content__list {
   display: grid;
-  gap: 30px;
-  margin-bottom: 30px;
+  gap: 25px;
   margin-right: 3px;
 }
 
@@ -163,7 +164,7 @@ ol {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .content__accent {
@@ -191,6 +192,10 @@ ol {
 }
 
 .content__video-card-description {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -201,7 +206,7 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .search-form__fieldset {
@@ -212,7 +217,7 @@ ol {
   display: flex;
   align-items: center;
   width: fit-content;
-  gap: 1.5px;
+  gap: 2px;
   cursor: pointer
 }
 
@@ -232,6 +237,10 @@ ol {
   letter-spacing: 0;
   cursor: pointer
 }
+
+/* Прим. В ревью есть замечание "надо исправить": "Для поля ввода нужно задать стили для состояния :active". 
+В описании задания ничего не указано о состоянии :active, 
+в макете в Figma также не предусмотрено визуальное изменение текстового поля ввода в состоянии :active */
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
@@ -280,7 +289,8 @@ ol {
 }
 
 .more-button {
-  width: 100%;
+  width: 390px;
+  height: 34px;
 }
 
 .button:hover {
@@ -304,15 +314,19 @@ ol {
   background-color: #545050;
 }
 
-.content__list-item:hover .content__video-card-description {
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
   text-decoration: underline;
 }
 
-.content__list-item:focus {
+.content__card-link:focus {
   outline: none;
 }
 
-.content__list-item:focus-visible {
+.content__card-link:focus-visible {
   outline: #fff solid 1px;
 }
 
