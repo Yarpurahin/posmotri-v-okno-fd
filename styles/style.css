@@ -132,7 +132,8 @@ ol {
 .content__list {
   display: grid;
   gap: 25px;
-  margin-right: 3px;
+  margin-right: 1px;
+  margin-bottom: 30px;
 }
 
 .content__list-item {
@@ -165,6 +166,7 @@ ol {
   line-height: 100%;
   letter-spacing: 0;
   margin-bottom: 7px;
+  padding-top: 1px;
 }
 
 .content__accent {
@@ -206,7 +208,7 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 20px;
+  gap: 16px;
 }
 
 .search-form__fieldset {
@@ -256,6 +258,7 @@ ol {
   height: 19px;
   border: 1px solid #fff;
   padding: 1px;
+  margin-right: 3px;
 }
 
 .search-form__pseudo-checkbox::after {
